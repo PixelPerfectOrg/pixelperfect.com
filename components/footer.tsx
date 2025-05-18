@@ -17,51 +17,75 @@ export default function Footer() {
             We build websites that work for your business.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              <Instagram className="h-5 w-5" />
-              <span className="sr-only">Instagram</span>
-            </Link>
           </div>
         </div>
-        
+
         <div>
           <h3 className="font-medium text-sm mb-4">Services</h3>
           <ul className="space-y-3">
-            {["Web Development", "UI/UX Design", "E-Commerce", "Mobile Apps", "SEO Optimization"].map((item) => (
+            {[
+              "Web Development",
+              "UI/UX Design",
+              "E-Commerce",
+              "Mobile Apps",
+              "SEO Optimization",
+            ].map((item) => (
               <li key={item}>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   {item}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        
+
         <div>
           <h3 className="font-medium text-sm mb-4">Resources</h3>
           <ul className="space-y-3">
-            {["Blog", "Case Studies", "Documentation", "Help Center", "Privacy Policy", "Terms of Service"].map((item) => (
+            {[
+              "Blog",
+              "Case Studies",
+              "Documentation",
+              "Help Center",
+              "Privacy Policy",
+              "Terms of Service",
+            ].map((item) => (
               <li key={item}>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="#"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   {item}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        
+
         <div>
           <h3 className="font-medium text-sm mb-4">Stay Updated</h3>
           <p className="text-sm text-muted-foreground mb-4">
@@ -78,11 +102,12 @@ export default function Footer() {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground mt-4">
-            By subscribing, you agree to our Terms of Service and Privacy Policy.
+            By subscribing, you agree to our Terms of Service and Privacy
+            Policy.
           </p>
         </div>
       </div>
-      
+
       <div className="container px-4 mt-16 pt-8 border-t">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
@@ -90,9 +115,9 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             {["Privacy", "Terms", "Cookies", "Contact"].map((item) => (
-              <Link 
-                key={item} 
-                href="#" 
+              <Link
+                key={item}
+                href="#"
                 className="text-xs text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item}
